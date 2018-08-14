@@ -1,2 +1,1 @@
-# Springs
-A Spring Framework Implementation
+# Hibernate
