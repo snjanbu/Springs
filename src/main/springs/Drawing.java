@@ -18,6 +18,9 @@ public class Drawing {
 		
 		Rectangle rectangle=(Rectangle)applicationContext.getBean("rectangle");
 		rectangle.draw();
+		
+		Circle circle=(Circle)applicationContext.getBean("circle");
+		circle.draw();
 	}
 
 }
