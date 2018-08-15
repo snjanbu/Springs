@@ -20,4 +20,5 @@
 		<property name="x" value="20" />
 		<property name="y" value="20" />
 	</bean>
+	<bean class="main.springs.LifeCycleExplanation"/>
 </beans>
