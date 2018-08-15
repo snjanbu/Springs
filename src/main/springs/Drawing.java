@@ -25,6 +25,9 @@ public class Drawing {
 		Line line=(Line)applicationContext.getBean("line");
 		line.draw();
 		
+		EmployeeInfo employeeInfo=(EmployeeInfo)applicationContext.getBean("employeeInfo");
+		employeeInfo.show();
+		
 		ApplicationContext autowireContext=new ClassPathXmlApplicationContext("AutowireContext.xml");
 		Rectangle autoRectangle=(Rectangle)autowireContext.getBean("rectangle");
 		autoRectangle.draw();
