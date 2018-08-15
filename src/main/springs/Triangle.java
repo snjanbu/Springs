@@ -4,6 +4,13 @@ class Triangle {
 	
 	String type;
 	
+	String degree;
+	
+	public Triangle(String type,String degree) {
+		this.type=type;
+		this.degree=degree;
+	}
+	
 	public String getType() {
 		return type;
 	}
@@ -12,7 +19,11 @@ class Triangle {
 		this.type = type;
 	}
 
+	public String getDegree() {
+		return degree;
+	}
+
 	public void draw() {
-		System.out.println("Draw Triangle");
+		System.out.println(getType() +"Triangle Drawn of degree "+getDegree());
 	}
 }

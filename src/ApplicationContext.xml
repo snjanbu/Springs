@@ -5,5 +5,7 @@
    http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
    <bean id="triangle" class="main.springs.Triangle">
    		<property name="type" value="Equilateral"></property>
+   		<constructor-arg index="0" type="java.lang.String" value="Equilateral"/>
+   		<constructor-arg index="1" type="java.lang.String" value="180"/>
    </bean>
 </beans>
