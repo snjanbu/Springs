@@ -1,6 +1,11 @@
 package main.springs;
 
-class Rectangle {
+import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.BeanNameAware;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
+
+class Rectangle implements ApplicationContextAware,BeanNameAware{
 	
 	Point pointOne;
 	Point pointTwo;
@@ -37,5 +42,15 @@ class Rectangle {
 		System.out.println(this.getPointTwo());
 		System.out.println(this.getPointThree());
 		System.out.println(this.getPointFour());
+	}
+	@Override
+	public void setBeanName(String beanName) {
+		// TODO Auto-generated method stub
+		System.out.println(beanName);
+	}
+	@Override
+	public void setApplicationContext(ApplicationContext context) throws BeansException {
+		// TODO Auto-generated method stub
+		System.out.println(context.getDisplayName());
 	}
 }
