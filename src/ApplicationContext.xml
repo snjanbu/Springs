@@ -39,4 +39,15 @@
 		<property name="x" value="0" />
 		<property name="y" value="0" />
 	</bean>
+	<bean id="line" class ="main.springs.Line">
+	<property name="pointList">
+		<list>
+			<bean class="main.springs.Point">
+				<property name="x" value="0" />
+				<property name="y" value="20" />
+			</bean>
+			<ref bean="pointOne"/>
+		</list>
+	</property>
+	</bean>
 </beans>

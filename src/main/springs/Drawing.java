@@ -21,6 +21,9 @@ public class Drawing {
 		
 		Circle circle=(Circle)applicationContext.getBean("circle");
 		circle.draw();
+		
+		Line line=(Line)applicationContext.getBean("line");
+		line.draw();
 	}
 
 }
