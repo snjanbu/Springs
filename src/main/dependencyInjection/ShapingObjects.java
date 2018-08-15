@@ -1,4 +1,4 @@
-package main.DependencyInjection;
+package main.dependencyInjection;
 
 class Triangle implements Shape{
 	public void draw() {

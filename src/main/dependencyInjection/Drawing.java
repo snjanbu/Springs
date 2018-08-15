@@ -1,4 +1,4 @@
-package main.DependencyInjection;
+package main.dependencyInjection;
 
 public class Drawing implements Shape{
 	
