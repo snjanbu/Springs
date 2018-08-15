@@ -8,4 +8,26 @@
    		<constructor-arg index="0" type="java.lang.String" value="Equilateral"/>
    		<constructor-arg index="1" type="java.lang.String" value="180"/>
    </bean>
+   <bean id="rectangle" class="main.springs.Rectangle">
+   		<property name="pointOne" ref="pointOne"/>
+   		<property name="pointTwo" ref="pointTwo"/>
+   		<property name="pointThree" ref="pointThree"/>
+   		<property name="pointFour" ref="pointFour"/>
+   </bean>
+   <bean id="pointOne" class="main.springs.Point">
+   		<property name="x" value="0"/>
+   		<property name="y" value="0"/>
+   </bean>
+   <bean id="pointTwo" class="main.springs.Point">
+   		<property name="x" value="20"/>
+   		<property name="y" value="0"/>
+   </bean>
+   <bean id="pointThree" class="main.springs.Point">
+   		<property name="x" value="20"/>
+   		<property name="y" value="20"/>
+   </bean>
+   <bean id="pointFour" class="main.springs.Point">
+   		<property name="x" value="0"/>
+   		<property name="y" value="20"/>
+   </bean>
 </beans>

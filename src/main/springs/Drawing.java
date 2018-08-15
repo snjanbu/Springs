@@ -15,6 +15,9 @@ public class Drawing {
 		ApplicationContext applicationContext=new ClassPathXmlApplicationContext("ApplicationContext.xml");
 		Triangle triangle=(Triangle)applicationContext.getBean("triangle");
 		triangle.draw();
+		
+		Rectangle rectangle=(Rectangle)applicationContext.getBean("rectangle");
+		rectangle.draw();
 	}
 
 }
