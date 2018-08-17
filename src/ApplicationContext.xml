@@ -65,4 +65,5 @@
 			</map>
 		</property>
 	</bean>
+	<bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"/>
 </beans>

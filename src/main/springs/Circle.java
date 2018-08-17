@@ -1,5 +1,7 @@
 package main.springs;
 
+import org.springframework.beans.factory.annotation.Required;
+
 public class Circle implements Shape{
 	
 	private Point centrePoint;
@@ -17,7 +19,8 @@ public class Circle implements Shape{
 	public double getRadius() {
 		return radius;
 	}
-
+	
+	@Required
 	public void setRadius(double radius) {
 		this.radius = radius;
 	}
