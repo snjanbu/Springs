@@ -1,6 +1,6 @@
 package main.springs;
 
-public class Circle {
+public class Circle implements Shape{
 	
 	private Point centrePoint;
 	

@@ -15,16 +15,16 @@ public class Drawing {
 //		BeanFactory xmlBeanFactory=new XmlBeanFactory(new FileSystemResource("ApplicationContext.xml"));
 		AbstractApplicationContext applicationContext=new ClassPathXmlApplicationContext("ApplicationContext.xml");
 		applicationContext.registerShutdownHook();
-		Triangle triangle=(Triangle)applicationContext.getBean("triangle");
+		Shape triangle=(Shape)applicationContext.getBean("triangle");
 		triangle.draw();
 		
-		Rectangle rectangle=(Rectangle)applicationContext.getBean("rectangle");
+		Shape rectangle=(Shape)applicationContext.getBean("rectangle");
 		rectangle.draw();
 		
-		Circle circle=(Circle)applicationContext.getBean("circle");
+		Shape circle=(Shape)applicationContext.getBean("circle");
 		circle.draw();
 		
-		Line line=(Line)applicationContext.getBean("line");
+		Shape line=(Shape)applicationContext.getBean("line");
 		line.draw();
 		
 		EmployeeInfo employeeInfo=(EmployeeInfo)applicationContext.getBean("employeeInfo");

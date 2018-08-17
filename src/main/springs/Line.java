@@ -2,7 +2,7 @@ package main.springs;
 
 import java.util.List;
 
-public class Line {
+public class Line implements Shape{
 	List <Point> pointList;
 
 	public List<Point> getPointList() {

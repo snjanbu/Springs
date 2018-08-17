@@ -3,7 +3,7 @@ package main.springs;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 
-class Triangle implements DisposableBean,InitializingBean{
+class Triangle implements DisposableBean,InitializingBean,Shape{
 	
 	String type;
 	
