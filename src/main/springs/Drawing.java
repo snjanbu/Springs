@@ -15,6 +15,7 @@ public class Drawing {
 //		BeanFactory xmlBeanFactory=new XmlBeanFactory(new FileSystemResource("ApplicationContext.xml"));
 		AbstractApplicationContext applicationContext=new ClassPathXmlApplicationContext("ApplicationContext.xml");
 		applicationContext.registerShutdownHook();
+		
 		Shape triangle=(Shape)applicationContext.getBean("triangle");
 		triangle.draw();
 		
@@ -32,7 +33,8 @@ public class Drawing {
 		
 		AbstractApplicationContext autowireContext=new ClassPathXmlApplicationContext("AutowireContext.xml");
 		autowireContext.registerShutdownHook();
-		Rectangle autoRectangle=(Rectangle)autowireContext.getBean("rectangle");
+		
+		Shape autoRectangle=(Shape)autowireContext.getBean("rectangle");
 		autoRectangle.draw();
 		
 	}
