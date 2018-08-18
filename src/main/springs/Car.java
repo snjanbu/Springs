@@ -7,6 +7,8 @@ import javax.annotation.PreDestroy;
 import javax.annotation.Resource;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationEventPublisher;
+import org.springframework.context.ApplicationEventPublisherAware;
 import org.springframework.context.MessageSource;
 import org.springframework.stereotype.Component;//Generic 
 
@@ -51,5 +53,6 @@ public class Car implements Vehicle {
 	public void myDestroyMethod() {
 		System.out.println("Destroy Method");
 	}
+
 
 }
