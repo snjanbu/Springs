@@ -11,6 +11,8 @@ public class Driver {
 		
 		AbstractApplicationContext context=new ClassPathXmlApplicationContext("ConfigContext.xml");
 
+		System.out.println(context.getMessage("greetings", null,"Default Value",null));
+
 		Vehicle bike=(Vehicle)context.getBean("bike");
 		bike.drive();
 
