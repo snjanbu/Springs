@@ -4,7 +4,11 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Controller;//Controller Object
+import org.springframework.stereotype.Repository;//DAO Object
+import org.springframework.stereotype.Service;//Service Object
 
+@Controller
 public class Bike implements Vehicle{
 	
 	private Wheel wheel;

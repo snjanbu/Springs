@@ -7,9 +7,9 @@
            http://www.springframework.org/schema/context
            http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
-	<bean id="car" class="main.springs.Car">
+<!-- 	<bean id="car" class="main.springs.Car"> -->
 <!-- 		<property name="Wheel" ref="CarWheel"></property> -->
-	</bean>
+<!-- 	</bean> -->
 	<bean id="BikeWheel" class="main.springs.Wheel">
 		<qualifier value="BikeSearch"></qualifier>
 		<property name="noOfWheels" value="2"></property>
@@ -17,8 +17,9 @@
 	<bean id="CarWheel" class="main.springs.Wheel">
 		<property name="noOfWheels" value="4"></property>
 	</bean>
-	<bean id="bike" class="main.springs.Bike">
-		<!-- <property name="Wheel" ref="Wheel"></property> -->
-	</bean>
+<!-- 	<bean id="bike" class="main.springs.Bike"> -->
+<!-- 		<property name="Wheel" ref="BikeWheel"></property> -->
+<!-- 	</bean> -->
 	<context:annotation-config></context:annotation-config>
+	<context:component-scan base-package="main.springs"></context:component-scan>
 </beans>

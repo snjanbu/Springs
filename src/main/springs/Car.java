@@ -6,6 +6,9 @@ import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import javax.annotation.Resource;
 
+import org.springframework.stereotype.Component;//Generic 
+
+@Component
 public class Car implements Vehicle {
 
 	private Wheel wheel;
