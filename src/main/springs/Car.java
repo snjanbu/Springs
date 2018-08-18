@@ -2,6 +2,10 @@ package main.springs;
 
 import java.util.List;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+import javax.annotation.Resource;
+
 public class Car implements Vehicle {
 
 	private Wheel wheel;
@@ -10,6 +14,7 @@ public class Car implements Vehicle {
 		return wheel;
 	}
 
+	@Resource(name="CarWheel")
 	public void setWheel(Wheel wheel) {
 		this.wheel = wheel;
 	}
@@ -18,6 +23,16 @@ public class Car implements Vehicle {
 	public void drive() {
 		// TODO Auto-generated method stub
 		System.out.println(wheel);
+	}
+	
+	@PostConstruct
+	public void myInitMethod() {
+		System.out.println("Initialization Method");
+	}
+	
+	@PreDestroy
+	public void myDestroyMethod() {
+		System.out.println("Destroy Method");
 	}
 
 }
